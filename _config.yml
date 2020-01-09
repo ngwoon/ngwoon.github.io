@@ -5,7 +5,7 @@
 
 # Site
 title: N's Blog
-subtitle: Programming Driary
+subtitle: Programming Diary
 description: 개발자가 되고픈 대학생의 학습일기
 author: ngwoon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
@@ -353,7 +353,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
