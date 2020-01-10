@@ -1,5 +1,5 @@
 ---
-title: 2019 INU Open Contest
+title: 펭귄추락대책위원회
 author: ngwoon
 layout: post
 categories:
