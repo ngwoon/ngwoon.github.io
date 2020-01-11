@@ -21,9 +21,9 @@ tags:
 
 구현 내용 중 핵심은 아래와 같다.  
 
-* ###### answer 벡터에 오름차순으로 도시를 넣기 위해, binary_search STL을 이용하기 위해서 destroied 벡터를 미리 오름차순으로 정렬한다.
-* ###### solve 함수 내에서 adj 배열을 순회하며 해당 도시의 인접 도시가 모두 파괴된 상태라면, 해당 도시와 인접한 도시를 check 배열에 파괴되었다고 표시한다.
-* ###### destroied 배열 내의 모든 도시가 파괴되었으면 solve 함수를 return 한다.
+* #### answer 벡터에 오름차순으로 도시를 넣기 위해, binary_search STL을 이용하기 위해서 destroied 벡터를 미리 오름차순으로 정렬한다.
+* #### solve 함수 내에서 adj 배열을 순회하며 해당 도시의 인접 도시가 모두 파괴된 상태라면, 해당 도시와 인접한 도시를 check 배열에 파괴되었다고 표시한다.
+* #### destroied 배열 내의 모든 도시가 파괴되었으면 solve 함수를 return 한다.
 
 ```cpp
 #include <iostream>
