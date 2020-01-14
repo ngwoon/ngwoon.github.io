@@ -3,7 +3,7 @@ title: 2 x N 예쁜 타일링
 author: ngwoon
 layout: post
 categories:
-- BOJ
+- 백준
 tags:
 - 2 x N 예쁜 타일링
 - 2019 INU

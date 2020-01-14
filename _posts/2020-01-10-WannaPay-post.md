@@ -3,7 +3,7 @@ title: 내가 살게, 아냐 내가 살게
 author: ngwoon
 layout: post
 categories:
-- BOJ
+- 백준
 tags:
 - 내가 살게, 아냐 내가 살게
 - 2019 INU

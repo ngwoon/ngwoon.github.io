@@ -3,7 +3,7 @@ title: 파괴된 도시
 author: ngwoon
 layout: post
 categories:
-- BOJ
+- 백준
 tags:
 - 파괴된 도시
 - 2019 INU
