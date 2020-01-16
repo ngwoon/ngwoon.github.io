@@ -4,6 +4,7 @@ author: ngwoon
 layout: post
 categories:
 - 백준
+- boj
 tags:
 - 2 x N 예쁜 타일링
 - 2019 INU
