@@ -3,7 +3,6 @@ title: 내가 살게, 아냐 내가 살게
 author: ngwoon
 layout: post
 categories:
-- 백준
 - boj
 tags:
 - 내가 살게, 아냐 내가 살게
