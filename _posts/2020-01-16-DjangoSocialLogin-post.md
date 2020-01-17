@@ -108,7 +108,7 @@ tags:
   이제 index.html을 작성하여 구글 로그인 기능이 잘 작동되나 확인해보자.
   필자는 아래 간단한 html코드를 예시로 사용했다.
 
-  ```python
+  ```
   <!--MyProject/templates/index.html-->
   <!--일반적으로 템플릿(html) 파일은 templates폴더를 따로 만들어 저장한다.-->
   {% load socialaccount %}
