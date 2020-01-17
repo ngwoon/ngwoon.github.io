@@ -6,9 +6,9 @@ categories:
 - Django
 tags:
 - 소셜 로그인
+- 구글
 - 장고
 - Django
-- 로그인 API
 ---
 
 # [Django] 소셜 로그인 적용
@@ -21,7 +21,7 @@ tags:
 
   ###### 아울러 이 포스트는 PyCharm + Django 환경에서 공부한 내용을 토대로 작성되었음을 알립니다.
 
-<br>
+  <br>
 
   ### I. django-allauth 라이브러리 설치 및 설정
   위 라이브러리는 소셜 로그인 기능을 django에서 사용 가능하게 도와준다.
@@ -30,6 +30,7 @@ tags:
   ### II. settings.py 설정
 
   자신의 웹 앱과 django-allauth를 연결해주는 작업이라고 생각하면 될 것 같다.
+
   ![settings.py1](/assets/images/Django-Social-LogIn-post-images/settings1.png)
 
   위 이미지의 provider부분은 어떤 공급체(google, facebook 등)의 소셜 로그인을 사용할 것인지를 의미한다.
@@ -37,6 +38,7 @@ tags:
   <br>
 
   settings.py 맨 밑에 아래 내용을 추가해 준다.
+
   ![settings.py2](/assets/images/Django-Social-LogIn-post-images/settings2.png)
 
   위 이미지의 LOGIN_REDIRECT_URL 은 사용자의 로그인 후 보여질 페이지를 의미한다. 자신의 웹에 맞게 잘 설정해주자.
@@ -80,7 +82,6 @@ tags:
   <br><br>
 
   ---
-
   ### Google Sign-In API 키 발급
 
   대부분의 API를 사용하기 위해서는 해당 API의 키 발급을 받아야 한다. 우선 아래 링크로 접속하자.
@@ -107,7 +108,7 @@ tags:
   이제 index.html을 작성하여 구글 로그인 기능이 잘 작동되나 확인해보자.
   필자는 아래 간단한 html코드를 예시로 사용했다.
 
-  ```html
+  ```python
   <!--MyProject/templates/index.html-->
   <!--일반적으로 템플릿(html) 파일은 templates폴더를 따로 만들어 저장한다.-->
   {% load socialaccount %}
