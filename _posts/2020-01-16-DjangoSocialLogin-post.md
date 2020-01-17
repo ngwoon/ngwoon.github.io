@@ -108,29 +108,27 @@ tags:
   이제 index.html을 작성하여 구글 로그인 기능이 잘 작동되나 확인해보자.
   필자는 아래 간단한 html코드를 예시로 사용했다.
 
-  ```
-  <!--MyProject/templates/index.html-->
-  <!--일반적으로 템플릿(html) 파일은 templates폴더를 따로 만들어 저장한다.-->
-  {% load socialaccount %}
-  {% providers_media_js %}
 
-  <h1>My WebSite</h1>
+    <!--MyProject/templates/index.html-->
+    <!--일반적으로 템플릿(html) 파일은 templates폴더를 따로 만들어 저장한다.-->
+    {% load socialaccount %}
+    {% providers_media_js %}
 
-  {% if user.is_authenticated %}
-  <a href="/accounts/logout">로그아웃</a>
-  <br>
-  {{user.username}} 님, 환영합니다.
+    <h1>My WebSite</h1>
 
-  {% else %}
-  <a href="/accounts/signup">회원가입</a>
-  <br>
-  <a href="{% provider_login_url 'google' %}">구글 로그인</a>
-  <br>
-  로그인이 필요한 상태입니다.
+    {% if user.is_authenticated %}
+    <a href="/accounts/logout">로그아웃</a>
+    <br>
+    {{user.username}} 님, 환영합니다.
 
-  {% endif %}
+    {% else %}
+    <a href="/accounts/signup">회원가입</a>
+    <br>
+    <a href="{% provider_login_url 'google' %}">구글 로그인</a>
+    <br>
+    로그인이 필요한 상태입니다.
 
-  ```
+    {% endif %}
 
   <br>
 
