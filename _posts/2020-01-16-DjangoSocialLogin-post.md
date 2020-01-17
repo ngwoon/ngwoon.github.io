@@ -16,18 +16,21 @@ tags:
 
 요즘엔 로그인 기능을 사용하지 않는 사이트를 찾아보기 힘들다. 필자 또한 웹을 공부하면서 가장 기본이 되는 로그인 기능과 마주하게 되었다. 그냥 구현해 보는 것도 좋은 공부가 되겠지만, 사용 가능한 API 활용을 얼마나 잘 하는가도 중요하다고 생각한다. 따라서 현 포스트에선 Django에 소셜 로그인 기능을 어떻게 추가하는지를 살펴보고자 한다.
 
-  ###### 아래 내용은 구글 소셜 로그인을 django에서 사용하는 방법에 대한 내용입니다.
-  ###### django설치, 프로젝트/앱 시작, 첫 migration, 관리자 계정 만들기 등 기본적인 설정은 완료되었다고 가정하고 그 이후의 내용을 다룹니다.
-
-  ###### 아울러 이 포스트는 PyCharm + Django 환경에서 공부한 내용을 토대로 작성되었음을 알립니다.
-
+  <h6>
+  아래 내용은 구글 소셜 로그인을 django에서 사용하는 방법에 대한 내용입니다.
   <br>
+  django설치, 프로젝트/앱 시작, 첫 migration, 관리자 계정 만들기 등 기본적인 설정은 완료되었다고 가정하고 그 이후의 내용을 다룹니다.
+  <br>
+  아울러 이 포스트는 PyCharm + Django 환경에서 공부한 내용을 토대로 작성되었음을 알립니다.
+  </h6>
 
-  ### I. django-allauth 라이브러리 설치 및 설정
+  <br><br>
+
+  <h3> I. django-allauth 라이브러리 설치 및 설정 </h3>  
   위 라이브러리는 소셜 로그인 기능을 django에서 사용 가능하게 도와준다.
   설치 후 몇 가지 설정만 해준다면 자신의 프로젝트에 소셜 로그인 기능을 넣을 수 있다. <br>
 
-  ### II. settings.py 설정
+  <h3> II. settings.py 설정 </h3>
 
   자신의 웹 앱과 django-allauth를 연결해주는 작업이라고 생각하면 될 것 같다.
 
@@ -45,7 +48,7 @@ tags:
 
   <br><br>
 
-  ### III. urls.py 설정
+  <h3> III. urls.py 설정 </h3>
 
   urls.py 는 웹에서 표현되는 url과 웹 프로젝트의 파일 사이의 관계를 명시하는 역할을 맡는다. allauth 라이브러리에 소셜 로그인에 대한 urls.py가 이미 정의되어 있으므로, 로그인 시도가 요청되면 allauth의 urls.py로 이동할 수 있도록 설정해주자.
 
@@ -67,7 +70,7 @@ tags:
   터미널에 ```python manage.py runserver``` 입력 후 http://127.0.0.1:8000/admin 으로 접속하면 아래와 같은 화면을 마주할 것이다.
 
   ![CheckAdminPage](/assets/images/Django-Social-LogIn-post-images/CheckAdminPage.png)
-  ###### (JOIN 항목은 필자가 django DB를 공부하며 추가했던 내용이므로 무시해도 된다.)
+  <h6> (JOIN 항목은 필자가 django DB를 공부하며 추가했던 내용이므로 무시해도 된다.) </h6>
 
   <br>
 
@@ -82,7 +85,7 @@ tags:
   <br><br>
 
   ---
-  ### Google Sign-In API 키 발급
+  <h3> Google Sign-In API 키 발급 </h3>
 
   대부분의 API를 사용하기 위해서는 해당 API의 키 발급을 받아야 한다. 우선 아래 링크로 접속하자.
 
@@ -111,13 +114,15 @@ tags:
   <br>
 
   **서버 가동 후 웹 사이트 확인**
-  ![NeedLogIn](/assets/images/Django-Social-LogIn-post-images/NeedLogIn.png)
+  ![NeedLogIn](/assets/images/Django-Social-LogIn-post-images/NeedLogin.png)
   <br>
   ![LogIned](/assets/images/Django-Social-LogIn-post-images/Logined.png)
 
 
   회원가입 기능도 잘 된다. 눈으로 확인해보고 싶다면, 회원가입 후 관리자 페이지로 접속하여 아이디가 추가 되었는지 확인할 수 있다.  
-#
+
+
+  <br><br>
 
 
   ***Redirect_Error 발생 시***
