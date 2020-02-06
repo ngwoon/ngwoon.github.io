@@ -380,8 +380,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: ns-blog
   count: false
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -434,13 +434,13 @@ changyan:
 #livere_uid: your uid
 
 # Support for gitalk comments system.
-gitalk:
-  enable: true
-  clientID: 54730ddf7b9420460c03
-  clientSecret: c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: colingpt.github.io
-  owner: colingpt
-  admin: colingpt
+# gitalk:
+#   enable: true
+#   clientID: 54730ddf7b9420460c03
+#   clientSecret: c05684701b25ff1c19ea0c01ce4d80c125e0707d
+#   repo: colingpt.github.io
+#   owner: colingpt
+#   admin: colingpt
 
 # Baidu Share
 # Available value:
