@@ -5,6 +5,8 @@ layout: post
 categories:
 - boj
 tags:
+- 파괴된 도시
+- 백준
 - INU
 - 18231
 ---

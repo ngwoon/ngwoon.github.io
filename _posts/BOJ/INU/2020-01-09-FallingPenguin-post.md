@@ -6,6 +6,7 @@ categories:
 - boj
 tags:
 - 펭귄추락대책위원회
+- 백준
 - INU
 - bfs
 - 18228
