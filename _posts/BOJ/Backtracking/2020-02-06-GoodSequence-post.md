@@ -6,6 +6,7 @@ categories:
 - boj
 tags:
 - 좋은 수열
+- 백준
 - 백트래킹
 - backtracking
 - 2661
