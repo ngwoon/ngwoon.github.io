@@ -5,8 +5,7 @@ layout: post
 categories:
 - boj
 tags:
-- 파괴된 도시
-- 2019 INU
+- INU
 - 18231
 ---
 

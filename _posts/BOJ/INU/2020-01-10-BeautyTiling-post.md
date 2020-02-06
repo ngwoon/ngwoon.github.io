@@ -4,9 +4,10 @@ author: ngwoon
 layout: post
 categories:
 - boj
+- INU
 tags:
 - 2 x N 예쁜 타일링
-- 2019 INU
+- INU
 - 18230
 ---
 

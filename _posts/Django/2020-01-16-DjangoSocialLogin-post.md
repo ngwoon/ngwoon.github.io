@@ -35,7 +35,7 @@ tags:
 
   자신의 웹 앱과 django-allauth를 연결해주는 작업이라고 생각하면 될 것 같다.
 
-  ![settings.py1](/assets/images/Django-Social-LogIn-post-images/settings1.png)
+  ![settings.py1](/assets/images/post/django/SocialLogIn/settings1.png)
 
   위 이미지의 provider부분은 어떤 공급체(google, facebook 등)의 소셜 로그인을 사용할 것인지를 의미한다.
 
@@ -43,7 +43,7 @@ tags:
 
   settings.py 맨 밑에 아래 내용을 추가해 준다.
 
-  ![settings.py2](/assets/images/Django-Social-LogIn-post-images/settings2.png)
+  ![settings.py2](/assets/images/post/django/SocialLogIn/settings2.png)
 
   위 이미지의 LOGIN_REDIRECT_URL 은 사용자의 로그인 후 보여질 페이지를 의미한다. 자신의 웹에 맞게 잘 설정해주자.
 
@@ -70,7 +70,7 @@ tags:
 
   터미널에 ```python manage.py runserver``` 입력 후 http://127.0.0.1:8000/admin 으로 접속하면 아래와 같은 화면을 마주할 것이다.
 
-  ![CheckAdminPage](/assets/images/Django-Social-LogIn-post-images/CheckAdminPage.png)
+  ![CheckAdminPage](/assets/images/post/django/SocialLogIn/CheckAdminPage.png)
   <h6> (JOIN 항목은 필자가 django DB를 공부하며 추가했던 내용이므로 무시해도 된다.) </h6>
 
   <br>
@@ -114,9 +114,9 @@ tags:
   <br>
 
   **서버 가동 후 웹 사이트 확인**
-  ![NeedLogIn](/assets/images/Django-Social-LogIn-post-images/NeedLogin.png)
+  ![NeedLogIn](/assets/images/post/django/SocialLogIn/NeedLogin.png)
   <br>
-  ![LogIned](/assets/images/Django-Social-LogIn-post-images/Logined.png)
+  ![LogIned](/assets/images/post/django/SocialLogIn/Logined.png)
 
 
   회원가입 기능도 잘 된다. 눈으로 확인해보고 싶다면, 회원가입 후 관리자 페이지로 접속하여 아이디가 추가 되었는지 확인할 수 있다.  

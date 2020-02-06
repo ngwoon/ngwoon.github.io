@@ -6,8 +6,8 @@ categories:
 - boj
 tags:
 - 펭귄추락대책위원회
+- INU
 - bfs
-- 2019 INU
 - 18228
 ---
 

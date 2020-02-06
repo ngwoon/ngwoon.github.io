@@ -6,7 +6,8 @@ categories:
 - boj
 tags:
 - 내가 살게, 아냐 내가 살게
-- 2019 INU
+- 백준
+- INU
 - 18229
 ---
 
