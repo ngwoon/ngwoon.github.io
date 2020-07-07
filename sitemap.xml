@@ -1,59 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://ngwoon.github.io/</loc>
-  <lastmod>2020-01-14T08:02:05+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/categories/</loc>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/tags/</loc>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/archives/</loc>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/tag/</loc>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/category/</loc>
-
-</url>
-<url>
-  <loc>https://ngwoon.github.io/boj/2020/01/10/WannaPay/</loc>
-
-</url>
-<url>
-  <loc>https://ngwoon.github.io/boj/2020/01/10/DestroiedCities/</loc>
-
-</url>
-<url>
-  <loc>https://ngwoon.github.io/boj/2020/01/10/BeautyTiling/</loc>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/boj/2020/01/09/FallingPenguin/</loc>
-</url>
-<url>
-  <loc>https://ngwoon.github.io/boj/2020/02/06/GoodSequence/</loc>
-</url>
-
-
-<url>
-  <loc>https://ngwoon.github.io/django/2020/01/16/DjangoSocialLogin/</loc>
-</url>
-
-<url>
-  <loc>https://ngwoon.github.io/algorithm/2020/02/19/Bitmask/</loc>
-</url>
-
-
-</urlset>
+    ---
+    layout: null
+    sitemap:
+      exclude: 'yes'
+    ---
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      {% for post in site.posts %}
+        {% unless post.published == false %}
+        <url>
+          <loc>{{ site.url }}{{ post.url }}</loc>
+          {% if post.sitemap.lastmod %}
+            <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+          {% elsif post.date %}
+            <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
+          {% if post.sitemap.changefreq %}
+            <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+          {% else %}
+            <changefreq>monthly</changefreq>
+          {% endif %}
+          {% if post.sitemap.priority %}
+            <priority>{{ post.sitemap.priority }}</priority>
+          {% else %}
+            <priority>0.5</priority>
+          {% endif %}
+        </url>
+        {% endunless %}
+      {% endfor %}
+    </urlset>
