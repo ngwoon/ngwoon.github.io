@@ -25,16 +25,13 @@ tags:
 
 ## 쿠키의 목적
 
-1. 세션 관리
-
+1. 세션 관리<br/>
     서버에 저장해야 할 로그인, 장바구니, 게임 스코어 등의 정보를 관리하기 용이하다.
 
-2. 개인화
-
+2. 개인화<br/>
     클라이언트가 지정한 테마, 설정 등의 정보를 관리할 수 있다.
 
-3. 트래킹 (추적)
-
+3. 트래킹 (추적)<br/>
     사용자의 행동을 기록, 분석할 때 쓰인다.
 
 - 과거엔 클라이언트 측에 정보를 저장하기 위해 쿠키를 사용했으나, HTML5에서 LocalStorage를 지원하기 시작하면서 정보 저장을 위해서는 modern storage APIs 종류 중 하나인 **웹 스토리지 API** (LocalStorage 또는 SessionStorage) 와 IndexedDB를 사용한다.
@@ -100,8 +97,7 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 
 ### 3. 보안 쿠키 (Secure Cookie)
 
-Set-Cookie 시 Secure옵션을 사용하면 보안 쿠키가 된다. 이 쿠키는 HTTPS 프로토콜 상에서 암호화된 요청일 경우에만 전송된다. 즉, HTTPS 요청일 때만 브라우저가 서버에게 쿠키를 전송하며, 그렇지 않으면 전송하지 않는다. (HTTP 에서는 Secure 옵션 사용 불가) 
-
+Set-Cookie 시 Secure옵션을 사용하면 보안 쿠키가 된다. 이 쿠키는 HTTPS 프로토콜 상에서 암호화된 요청일 경우에만 전송된다. 즉, HTTPS 요청일 때만 브라우저가 서버에게 쿠키를 전송하며, 그렇지 않으면 전송하지 않는다. (HTTP 에서는 Secure 옵션 사용 불가)<br/>
 Secure옵션을 설정해도 연결 자체가 취약할 수 있으므로, 민감한 정보는 쿠키에 저장하지 않는 것이 원칙이다.
 
 ### 4. HttpOnly 쿠키
@@ -124,13 +120,10 @@ SameSite 옵션은 CSRF (Cross-Site-Request-Forgery) 공격을 방지하기 위�
 Domain과 Path 옵션은 쿠키의 스코프를 명시한다.
 
 ### Domain
-
-Domain 옵션은 쿠키가 전송될 도메인의 범위를 지정한다. 예를 들어, domain=google.com 으로 설정한다면 이 쿠키는 google.com을 포함한 서브 도메인에게만 전송된다.
-
+Domain 옵션은 쿠키가 전송될 도메인의 범위를 지정한다. 예를 들어, domain=google.com 으로 설정한다면 이 쿠키는 google.com을 포함한 서브 도메인에게만 전송된다.<br/>
 (서브 도메인 예시 : mail.google.com, translate.google.com 등)
 
 ### Path
-
 path 옵션은 해당 쿠키가 전송될 URL의 범위를 지정한다. 예를 들어, path=/docs 로 설정한다면 이 쿠키는 /docs, /docs/main, /docs/index 등과 같은 경로는 전송되지만 /other 과 같은 경로는 해당 쿠키를 받을 수 없다.
 <br/>
 
@@ -140,10 +133,8 @@ path 옵션은 해당 쿠키가 전송될 URL의 범위를 지정한다. 예를 
 
 ### XSS
 
-XSS는 공격자가 특정 사이트에 자바스크립트 코드를 심어 타 클라이언트의 쿠키에 저장되어 있는 세션 ID를 훔치는 기술을 의미한다.
-
-사이트 제작자가 입력 데이터 검사를 허술하게 할 경우 XSS 공격에 쉽게 노출될 수 있다.
-
+XSS는 공격자가 특정 사이트에 자바스크립트 코드를 심어 타 클라이언트의 쿠키에 저장되어 있는 세션 ID를 훔치는 기술을 의미한다.<br/>
+사이트 제작자가 입력 데이터 검사를 허술하게 할 경우 XSS 공격에 쉽게 노출될 수 있다.<br/>
 예를 들어 어떤 게시판 사이트가 있을 때, 내용을 입력하는 부분에 공격자가 아래와 같은 내용을 입력 후 게시글을 포스트 했다고 가정하자.
 
 ```jsx
@@ -171,8 +162,7 @@ fclose($log);
 ?>
 ```
 
-만약 관리자가 해당 포스트를 클릭한다면, 게시판 서버는 게시글 내용 (위 JS 코드) 을 관리자의 브라우저에 전달하고, js코드가 관리자의 브라우저에서 실행되며 세션 ID는 해커의 .txt 파일로 넘어가게 된다.
-
+만약 관리자가 해당 포스트를 클릭한다면, 게시판 서버는 게시글 내용 (위 JS 코드) 을 관리자의 브라우저에 전달하고, js코드가 관리자의 브라우저에서 실행되며 세션 ID는 해커의 .txt 파일로 넘어가게 된다.<br/>
 해커는 이 세션 ID를 어떻게 이용할 수 있을까?
 
 ![naver cookie](/assets/images/post/Network/HTTP-Cookie/session-id-browser.png)
@@ -185,23 +175,21 @@ fclose($log);
 
 ### CSRF
 
-CSRF는 XSS와 비슷하지만 조금 다르다. XSS가 자바스크립트를 이용한 세션 하이재킹이라면, CSRF는 일반 사용자가 자신이 의도하지 않은 동작을 특정 웹사이트에 하게끔 해커가 의도하는 것이다.
-
+CSRF는 XSS와 비슷하지만 조금 다르다. XSS가 자바스크립트를 이용한 세션 하이재킹이라면, CSRF는 일반 사용자가 자신이 의도하지 않은 동작을 특정 웹사이트에 하게끔 해커가 의도하는 것이다.<br/>
 가장 와닿는 예시로 금융 사이트를 들어보자.
 
 1. 사용자가 인터넷 뱅킹을 위해 로그인을 하게되면, 해당 사이트에서 쿠키를 발급한다.
 2. 해당 쿠키가 만료되기 전, 사용자가 공격자가 코드를 심어놓은 웹사이트를 방문하거나 이메일을 열람한다. 해당 코드는 특정 계좌로 돈을 이체하도록 금융 사이트에 요청하는 코드이다.
 3. 금융 사이트 입장에서는 쿠키를 발급받은 사용자의 요청이므로 정상적으로 요청을 수행하게 된다.
 
-CSRF가 무엇인지 이해를 돕기 위한 예시이므로 실제 동작 방식은 더 복잡하고 어려울 것이다. 지금은 쿠키를 이용하여 이러한 공격이 가능하다는 것만 알아두자.
-
+CSRF가 무엇인지 이해를 돕기 위한 예시이므로 실제 동작 방식은 더 복잡하고 어려울 것이다. 지금은 쿠키를 이용하여 이러한 공격이 가능하다는 것만 알아두자.<br/>
 CSRF 공격을 방지하기 위해 CSRF 토큰(위조 방지 토큰) 을 주로 사용한다. 
 <br/><br/>
 
 ### 참고
 
-쿠키와 로컬스토리지<br/>
+**쿠키와 로컬스토리지**<br/>
 [https://medium.com/@erwinousy/쿠키-vs-로컬스토리지-차이점은-무엇일까-28b8db2ca7b2](https://medium.com/@erwinousy/%EC%BF%A0%ED%82%A4-vs-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-28b8db2ca7b2)
 
-XSS<br/>
+**XSS**<br/>
 [https://m.blog.naver.com/PostView.nhn?blogId=yjsec36&logNo=221490526587&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=yjsec36&logNo=221490526587&proxyReferer=https:%2F%2Fwww.google.com%2F)
