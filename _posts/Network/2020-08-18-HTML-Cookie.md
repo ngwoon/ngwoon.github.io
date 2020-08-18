@@ -191,8 +191,12 @@ CSRF가 무엇인지 이해를 돕기 위한 예시이므로 실제 동작 방�
 
 CSRF 공격을 방지하기 위해 CSRF 토큰(위조 방지 토큰) 을 주로 사용한다. 
 
-- 참고
 
-    쿠키와 로컬스토리지 : [https://medium.com/@erwinousy/쿠키-vs-로컬스토리지-차이점은-무엇일까-28b8db2ca7b2](https://medium.com/@erwinousy/%EC%BF%A0%ED%82%A4-vs-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-28b8db2ca7b2)
 
-    XSS : [https://m.blog.naver.com/PostView.nhn?blogId=yjsec36&logNo=221490526587&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=yjsec36&logNo=221490526587&proxyReferer=https:%2F%2Fwww.google.com%2F)
+### 참고
+
+쿠키와 로컬스토리지<br/>
+[https://medium.com/@erwinousy/쿠키-vs-로컬스토리지-차이점은-무엇일까-28b8db2ca7b2](https://medium.com/@erwinousy/%EC%BF%A0%ED%82%A4-vs-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-28b8db2ca7b2)
+
+XSS<br/>
+[https://m.blog.naver.com/PostView.nhn?blogId=yjsec36&logNo=221490526587&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=yjsec36&logNo=221490526587&proxyReferer=https:%2F%2Fwww.google.com%2F)
