@@ -11,10 +11,10 @@ tags:
 - 쿠키
 ---
 
-본 내용은 [MDN HTTP 쿠키](https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies)를 보고 공부, 정리한 내용입니다.<br/>
-
 # [Network] HTTP 쿠키
 - - -
+
+본 내용은 [MDN HTTP 쿠키](https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies)를 보고 공부, 정리한 내용입니다.<br/>
 
 ## HTTP 쿠키란?
 

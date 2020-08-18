@@ -11,10 +11,10 @@ tags:
 - 캐시
 ---
 
-본 내용은 [MDN HTTP 캐싱](https://developer.mozilla.org/ko/docs/Web/HTTP/Caching)를 보고 공부, 정리한 내용입니다.<br/>
-
 # [Network] HTTP 캐싱
 - - -
+
+본 내용은 [MDN HTTP 캐싱](https://developer.mozilla.org/ko/docs/Web/HTTP/Caching)를 보고 공부, 정리한 내용입니다.<br/>
 
 ## 웹 캐싱의 역할
 
