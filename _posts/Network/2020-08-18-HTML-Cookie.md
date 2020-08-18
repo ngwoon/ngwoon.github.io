@@ -125,7 +125,7 @@ Domain 옵션은 쿠키가 전송될 도메인의 범위를 지정한다. 예를
 
 ### Path
 path 옵션은 해당 쿠키가 전송될 URL의 범위를 지정한다. 예를 들어, path=/docs 로 설정한다면 이 쿠키는 /docs, /docs/main, /docs/index 등과 같은 경로는 전송되지만 /other 과 같은 경로는 해당 쿠키를 받을 수 없다.
-<br/>
+<br/><br/>
 
 ## 보안
 
