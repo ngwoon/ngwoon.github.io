@@ -21,6 +21,7 @@ tags:
 서버가 웹 브라우저에 전송하는 작은 데이터 조각.
 
 브라우저는 쿠키를 갖고 있다가 동일한 서버에 재요청 시 쿠키를 함께 전송한다. 서버는 쿠키를 보고 클라이언트 정보를 파악할 수 있으므로, Stateless한 HTTP에서 클라이언트의 정보를 관리할 수 있게 해준다.
+<br/>
 
 ## 쿠키의 목적
 
@@ -37,6 +38,7 @@ tags:
     사용자의 행동을 기록, 분석할 때 쓰인다.
 
 - 과거엔 클라이언트 측에 정보를 저장하기 위해 쿠키를 사용했으나, HTML5에서 LocalStorage를 지원하기 시작하면서 정보 저장을 위해서는 modern storage APIs 종류 중 하나인 **웹 스토리지 API** (LocalStorage 또는 SessionStorage) 와 IndexedDB를 사용한다.
+<br/>
 
 ## 쿠키와 로컬스토리지
 
@@ -57,6 +59,7 @@ HTML5의 등장과 함께 새로운 Javascript객체인 SessionStorage와 LocalS
 (*primitives : JS의 기본 타입. undefined, null, boolean, string, number 5가지가 있다.)
 
 다만, 로컬스토리지는 클라이언트 측에 영구히 남아있을 수 있는 정보이므로 보안적인 이슈를 고려해야 한다. 저장된 데이터를 암호화하거나, 인터넷에 재연결되었을 때 해당 데이터를 업로드 후 로컬에서 삭제하는 것이 바람직하다.
+<br/>
 
 ## 쿠키의 생성, 사용
 
@@ -83,6 +86,7 @@ GET /sample_page.html HTTP/1.1                        // 시작줄
 Host: www.example.org                                 // 헤더
 Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 ```
+<br/>
 
 ## 쿠키의 종류
 
@@ -113,6 +117,7 @@ Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
 ### 5. SameSite 쿠키
 
 SameSite 옵션은 CSRF (Cross-Site-Request-Forgery) 공격을 방지하기 위한 옵션이다. 말 그대로 SameSite는 쿠키가 cross-site의 요청과 함께 전달되지 않음을 요구하는 방식으로 CSRF 공격을 방지한다. 아직까지는 실험 중에 있으며, 지원하는 브라우저도, 그렇지 않은 브라우저도 있다. 
+<br/>
 
 ## 쿠키의 스코프
 
@@ -127,6 +132,7 @@ Domain 옵션은 쿠키가 전송될 도메인의 범위를 지정한다. 예를
 ### Path
 
 path 옵션은 해당 쿠키가 전송될 URL의 범위를 지정한다. 예를 들어, path=/docs 로 설정한다면 이 쿠키는 /docs, /docs/main, /docs/index 등과 같은 경로는 전송되지만 /other 과 같은 경로는 해당 쿠키를 받을 수 없다.
+<br/>
 
 ## 보안
 
@@ -190,8 +196,7 @@ CSRF는 XSS와 비슷하지만 조금 다르다. XSS가 자바스크립트를 �
 CSRF가 무엇인지 이해를 돕기 위한 예시이므로 실제 동작 방식은 더 복잡하고 어려울 것이다. 지금은 쿠키를 이용하여 이러한 공격이 가능하다는 것만 알아두자.
 
 CSRF 공격을 방지하기 위해 CSRF 토큰(위조 방지 토큰) 을 주로 사용한다. 
-
-
+<br/><br/>
 
 ### 참고
 
