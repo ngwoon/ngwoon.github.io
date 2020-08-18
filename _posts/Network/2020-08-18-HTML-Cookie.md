@@ -169,7 +169,7 @@ fclose($log);
 
 해커는 이 세션 ID를 어떻게 이용할 수 있을까?
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/65f01fce-64d2-448c-9822-c67fa13b7cf0/session-id-browser.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/65f01fce-64d2-448c-9822-c67fa13b7cf0/session-id-browser.png)
+![naver cookie](/assets/images/post/Network/HTTP-Cookie/session-id-browser.png)
 
 위 이미지는 네이버에 로그인한 뒤 무언가를 검색했을 때의 모습이다. 쿠키 값 내에 세션 ID가 담겨있는 것을 볼 수 있다. 이 값을 변경하여 서버에게 전달하면, 서버는 세션 ID만을 보고 판단하기 때문에 이를 관리자의 요청으로 받아들이고, 해커는 쉽게 관리자 권한을 얻을 수 있다. (관리자로 로그인된 화면을 볼 수 있음)
 
