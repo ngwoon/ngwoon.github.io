@@ -43,8 +43,8 @@ arguments를 **Array 형태** 라고 언급한 이유는, Array 처럼 인덱스
 예시코드
 ```jsx
 function test(arg) {
-		console.log(test.length);
-		console.log(arguments.length);
+    console.log(test.length);
+    console.log(arguments.length);
 }
 test('myname', 'is');
 
