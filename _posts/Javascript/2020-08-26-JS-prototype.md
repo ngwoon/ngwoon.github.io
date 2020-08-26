@@ -87,3 +87,9 @@ constructor와 [[Prototype]] 링크를 흐름 끊기지 않게 설명하려다 �
 
 ## prototype chain
 지금까지 prototype 속성과 [[Prototype]] 링크를 살펴보면서 JS에서 Prototype Object가 서로 연결되는 기법을 통해 객체 간 연관성을 표현할 수 있음을 알았다. 이렇게 prototype 사이 연관되어 있는 상태를 **prototype chain**이라 한다.
+
+
+## 참고
+[https://medium.com/@pks2974/javascript-%EC%99%80-prototype-%ED%94%84%EB%A1%9C%ED%86%A0-%ED%83%80%EC%9E%85-515f759bff79](https://medium.com/@pks2974/javascript-%EC%99%80-prototype-%ED%94%84%EB%A1%9C%ED%86%A0-%ED%83%80%EC%9E%85-515f759bff79)
+<br/><br/>
+[https://velog.io/@adam2/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Prototype-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC](https://velog.io/@adam2/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Prototype-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC)
