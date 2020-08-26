@@ -9,7 +9,6 @@ tags:
 - prototype
 - constructor
 - ```__proto__```
-- [[Prototype]]
 ---
 
 # [Javascript] prototype
