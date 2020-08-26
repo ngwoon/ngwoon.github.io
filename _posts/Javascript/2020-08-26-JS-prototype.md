@@ -7,8 +7,8 @@ categories:
 tags:
 - 자바스크립트
 - prototype
+- prototype object
 - constructor
-- ```__proto__```
 ---
 
 # [Javascript] prototype
