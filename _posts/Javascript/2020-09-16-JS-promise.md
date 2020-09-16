@@ -72,9 +72,9 @@ then, catch로 전달된 콜백 함수는 resolve, reject 함수 내부에서 �
 
 - Promise 내부에 구현한 연산 로직과 then, catch에 넘겨준 콜백 함수는 순서 관계가 명확하다. Promise 내부 로직의 실행이 정상적이든, 비정상적이든 끝나야지만 콜백 함수가 실행된다.
 
-then, catch문이 Promise와 콜백의 차이점을 명확히 보여주는 요소라 할 수 있다.
+then, catch문이 JS에서 Promise를 이용한 기법과 일반 콜백 함수의 차이점을 명확히 보여주는 요소라 할 수 있다.
 
-then, catch문을 이용하여 비동기 함수 간 **순서**를 정할 수 있기 때문이다!!
+then, catch문을 이용하여 **비동기 함수 간 순서**를 정할 수 있기 때문이다!!
 <br/><br/>
 
 ## async와 await
