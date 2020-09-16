@@ -1,5 +1,5 @@
 ---
-title: Javascript 표준 내장 객체
+title: Javascript Promise
 author: ngwoon
 layout: post
 categories:
