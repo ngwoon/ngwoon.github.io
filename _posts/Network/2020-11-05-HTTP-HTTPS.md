@@ -78,7 +78,7 @@ SSL 연결을 위해 TCP와 마찬가지로 handshaking 과정이 필요하다. 
 
 HTTP와 HTTPS 는 송,수신되는 데이터가 암호화된다는 점 외에는 큰 차이가 없다. 
 
-[Cloudflare 문서](https://www.cloudflare.com/ko-kr/learning/ssl/why-use-https/)에서는 HTTP보다 HTTPS를 사용해야하는 이유에 대해 설명하고 있다. 대강 요약하면 HTTPS를 사용하는게 서버와 클라이언트 모두에게 더 안전한 방법이며, HTTPS 사용 시 HTTP를 사용할 때보다 페이지 로딩 속도가 느려진다와 같은 몇 가지 속설에 대해 반박하는 내용이다.
+[Cloudflare 문서](https://www.cloudflare.com/ko-kr/learning/ssl/why-use-https/)에서는 HTTP보다 HTTPS를 사용해야하는 이유에 대해 설명하고 있다. 대강 요약하면 HTTPS를 사용하는게 서버와 클라이언트 모두에게 더 안전한 방법이며, "HTTPS 사용 시 HTTP를 사용할 때보다 페이지 로딩 속도가 느려진다" 와 같은 몇 가지 속설에 대해 반박하는 내용이다.
 
 HTTPS를 공부하면서 한 가지 흥미로운 점이 있었는데, google에서 HTTPS 사용을 독려한다는 내용이다. 구글링하며 HTTPS에 관한 여러 블로그 및 문서를 읽다보니 HTTPS를 사용하는 웹 사이트는 더 신뢰성 있는 사이트로 판별되어 google 검색 노출 우선순위가 높아진다는 내용이 자주 등장했다. 
 
