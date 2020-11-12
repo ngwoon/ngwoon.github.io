@@ -39,7 +39,7 @@ alert(JSON.stringify(array[0]));
 
 # WeakMap
 
-Map과 WeakMap의 차이는 크게 아래 3가지이다.<br/>
+Map과 WeakMap의 차이는 크게 아래 3가지이다.
 - WeakMap은 **key로 객체만을 사용**한다. (원시형 데이터 불가)
 - key로 사용된 객체가 **WeakMap의 key 이외에 그 어디에서도 참조되지 않는다면, 가비지 콜렉션의 대상이 된다.**
 
@@ -71,12 +71,11 @@ Map과 WeakMap의 차이는 크게 아래 3가지이다.<br/>
 
     ![weakmap-value-garbage-collection](/assets/images/post/Javascript/WeakMap과%20WeakSet/weakmap-value-garbage-collection.png)
 
-    WeakMap이 value로 객체를 참조하는 경우 속성이 사라지지 않는다. 따라서 **객체가 WeakMap의 key로 사용될 때만** 가비지 컬렉터에 의해 메모리 회수가 이루어질 수 있다는 것을 확인할 수 있었다.
+    WeakMap이 value로 객체를 참조하는 경우 속성이 사라지지 않는다. 따라서 **객체가 WeakMap의 key로 사용될 때만** 가비지 컬렉터에 의해 메모리 회수가 이루어진다는 것을 확인할 수 있었다.
 
 - WeakMap은 반복 작업, keys(), values(), entries()와 같은 메서드를 지원하지 않는다.
-
     **WeakMap의 key가 어느 시점에 가비지 컬렉터에 의해 회수될지 알 수 없기 때문에** WeakMap에서는 전체 key나 value를 얻는 작업은 할 수 없다.<br/>
-    WeakMap에서 지원하는 메서드는 아래 4개가 전부이다.<br/>
+    WeakMap에서 지원하는 메서드는 아래 4개가 전부이다.
     - WeakMap.get(key)
     - WeakMap.set(key, value)
     - WeakMap.delete(key)
