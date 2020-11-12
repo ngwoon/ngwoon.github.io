@@ -99,7 +99,7 @@ WeakMap은 어떤 데이터를 일정 시간동안 저장해두는 동작에도 
 
 # WeakSet
 
-WeakSet은 WeakMap과 약간 다른 자료구조이지만, 그 성질은 비슷하다.<br/>
+WeakSet은 WeakMap과 약간 다른 자료구조이지만, 그 성질은 비슷하다.
 - WeakSet에는 **객체형 데이터만 저장**할 수 있다.
 - WeakSet에 저장된 객체가 다른 어느곳에서도 참조되지 않으면, 가비지 컬렉터에 의해 회수된다.
 
@@ -115,7 +115,7 @@ console.log(temp);
 
 ![weakset-garbage-collection](/assets/images/post/Javascript/WeakMap과%20WeakSet/weakset-garbage-collection.png)
 
-WeakSet 역시 반복 작업 관련 메서드들은 호출할 수 없다. WeakSet에서 지원하는 메서드는 아래 3가지이다.<br/>
+WeakSet 역시 반복 작업 관련 메서드들은 호출할 수 없다. WeakSet에서 지원하는 메서드는 아래 3가지이다.
 - WeakSet.add(value)
 - WeakSet.has(value)
 - WeakSet.delete(value)
