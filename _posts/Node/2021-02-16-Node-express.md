@@ -3,7 +3,7 @@ title: Express.js
 author: ngwoon
 layout: post
 categories:
-- Network
+- Node
 tags:
 - node.js
 - express.js
