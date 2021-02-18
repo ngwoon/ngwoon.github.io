@@ -167,22 +167,16 @@ const upload = mutler({
 
 이렇게 생성된 upload 변수에 여러 미들웨어가 존재한다. 상황에 따라 사용해야하는 미들웨어의 종류가 다르다. 매개변수로 주어지는 필드 이름은 input 태그의 name 속성값을 뜻한다.
 
-- upload.single(필드 이름)
-
-    프론트에서 type이 file인 input이 하나일 때 upload.single 미들웨어로 처리한다.
-
+- upload.single(필드 이름)<br/>
+    프론트에서 type이 file인 input이 하나일 때 upload.single 미들웨어로 처리한다.<br/>
     파일은 **req.file**에 담긴다.
 
-- upload.array(필드 이름)
-
-    프론트에서 type이 file이고 multiple 속성을 갖는 input으로 파일을 넘길 때(파일 여러 개를 하나의 input을 이용해 보낼 때) upload.array 미들웨어로 처리한다. 
-
+- upload.array(필드 이름)<br/>
+    프론트에서 type이 file이고 multiple 속성을 갖는 input으로 파일을 넘길 때(파일 여러 개를 하나의 input을 이용해 보낼 때) upload.array 미들웨어로 처리한다. <br/>
     파일들은 **req.files**에 담긴다.
 
-- upload.fields({ name: 필드 1의 이름 }, { name: 필드 2의 이름})
-
-    type이 file인 input이 여러 개일 때, upload.fields 미들웨어로 처리한다.
-
+- upload.fields({ name: 필드 1의 이름 }, { name: 필드 2의 이름})<br/>
+    type이 file인 input이 여러 개일 때, upload.fields 미들웨어로 처리한다.<br/>
     필드 1의 이름이 field1, 필드 2의 이름이 field2라면, 
 
     ```jsx
@@ -191,12 +185,10 @@ const upload = mutler({
     });
     ```
 
-    와 같이 등록할 수 있다.
-
+    와 같이 등록할 수 있다.<br/>
     파일들은 req.files.field1, req.files.field2 에 담긴다.
 
-- upload.none()
-
+- upload.none()<br/>
     파일을 업로드하지 않지만 multipart/form-data 형식으로 데이터를 수신할 때 사용한다. 별다른 인자를 주지 않는다.
 
 ---
@@ -211,7 +203,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res, next) => {
-		// 요청, 응답 처리
+	// 요청, 응답 처리
 });
 
 module.exports = router;
@@ -224,7 +216,7 @@ app.use("/", indexRouter);
 ```
 
 routes폴더를 만든 뒤, 이곳에 경로별로 라우터 파일을 구분하여 router 모듈들을 모아둔다. 이를 app.js에서 import 하여 사용할 수 있다.<br/>
-(참고로 import시 index.js는 생략할 수 있어서 indexRouter의 require경로를 ./routes만 적어주어도 된다.)<br/>
+(참고로 import시 index.js는 생략할 수 있어서 indexRouter의 require경로를 ./routes만 적어주어도 된다.)<br/><br/>
 동일한 라우터를 여러 번 선언할 수 있다.<br/> 
 next("route") 를 사용하여 다음 라우터로 흐름을 넘길 수 있다.
 
@@ -244,7 +236,7 @@ router.get("/", (req, res, next) => {
 });
 ```
 
-위 예시에서 첫 번째 GET / 요청은 next("route")를 호출했으므로 뒤이어 등록된 미들웨어들은 호출되지 않는다. 다음 라우터인 두 번째 GET / 라우터로 흐름이 넘어간다.<br/>
+위 예시에서 첫 번째 GET / 요청은 next("route")를 호출했으므로 뒤이어 등록된 미들웨어들은 호출되지 않는다. 다음 라우터인 두 번째 GET / 라우터로 흐름이 넘어간다.<br/><br/>
 라우터의 주소에는 정규표현식 및 특수 패턴을 사용할 수 있다. 그 중 가장 대표적인 것이 **경로 파라미터**이다.
 
 ```jsx
