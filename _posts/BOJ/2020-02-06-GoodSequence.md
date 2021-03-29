@@ -3,7 +3,7 @@ title: 좋은 수열
 author: ngwoon
 layout: post
 categories:
-- boj
+- BOJ
 tags:
 - 좋은 수열
 - 백준

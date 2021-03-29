@@ -3,7 +3,7 @@ title: 펭귄추락대책위원회
 author: ngwoon
 layout: post
 categories:
-- boj
+- BOJ
 tags:
 - 펭귄추락대책위원회
 - 백준

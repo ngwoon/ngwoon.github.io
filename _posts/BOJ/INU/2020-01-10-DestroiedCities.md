@@ -3,7 +3,7 @@ title: 파괴된 도시
 author: ngwoon
 layout: post
 categories:
-- boj
+- BOJ
 tags:
 - 파괴된 도시
 - 백준

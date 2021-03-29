@@ -3,7 +3,7 @@ title: Modern Javascript WeakMap, WeakSet
 author: ngwoon
 layout: post
 categories:
-- javascript
+- Javascript
 tags:
 - 자바스크립트
 - WeakMap
