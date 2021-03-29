@@ -3,7 +3,7 @@ title: Django 소셜 로그인 사용하기
 author: ngwoon
 layout: post
 categories:
-- Django
+- django
 tags:
 - 소셜 로그인
 - 구글
